@@ -1,0 +1,12 @@
+@import 'variables';
+
+header {
+    height: 300px;
+    width: 100%;
+    > .banner {
+        background-image: url('../images/banner.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
+}

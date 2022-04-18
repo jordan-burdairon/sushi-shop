@@ -1,0 +1,42 @@
+@import 'variables';
+table {
+    width: 100%;
+    border-collapse: collapse;
+    td, th {
+        padding: 10px 5px;
+    }
+    > thead {
+        th {
+            border-bottom: 1px solid $dark;
+        }
+    }
+    > tfoot {
+        th {
+            border-top: 1px solid $dark;
+        }
+    }
+    > #lines-container {
+        > tr {
+            > td {
+                text-align: center;
+                > img {
+                    height: 50px;
+                }
+                > button {
+                    color: $dark;
+                    cursor: pointer;
+                    background-color: transparent;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 17.5px;
+                    border: 2px solid $dark;
+                    font-weight: bold;
+                    &:hover {
+                        background-color: $dark;
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+}

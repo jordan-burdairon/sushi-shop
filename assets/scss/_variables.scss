@@ -1,0 +1,13 @@
+// colors
+$dark: #050505;
+$medium: #666;
+$light: #f6f6f6;
+
+// dimensions
+
+// position 
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

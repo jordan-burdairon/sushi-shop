@@ -1,0 +1,93 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  min-height: 25px;
+  border: 1px solid medium;
+  transition: all 0.3s ease;
+  display: block;
+  transform: scale(0.95);
+  text-decoration: none;
+  background-color: #050505;
+  color: #f6f6f6;
+  cursor: pointer;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 5px 5px 10px 2px #050505;
+  transform: scale(1);
+}
+.card:hover > .overlay {
+  height: 100%;
+}
+.card > * {
+  pointer-events: none;
+}
+.card > .overlay {
+  position: absolute;
+  color: white;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 50px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card > .card-top img {
+  width: 100%;
+  height: auto;
+}
+.card > .card-content {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.card > .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.card > .card-bottom > .price {
+  color: #f6f6f6;
+  font-size: 20px;
+}
+.card > .card-bottom > .quantity {
+  color: #666;
+}
+.card > .card-bottom > .separator {
+  padding: 10px;
+}
+
+.card-col {
+  width: 100%;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-col {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-col {
+    width: 33.333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-col {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

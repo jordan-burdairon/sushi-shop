@@ -1,0 +1,37 @@
+@import 'variables';
+nav {
+    background-color: $dark;
+    > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        > li {
+            > a {
+                height: 70px;
+                width: 100%;
+                padding: 0 25px;
+                color: $dark;
+                text-decoration: none;
+                color: $light;
+                @include flex-center();
+                &:hover {
+                    background-color: $medium;
+                }
+                #cart-count {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 10px;
+                    height: 20px;
+                    border-radius: 10px;
+                    background-color: red;
+                    margin-left: 10px;
+                    &.hidden {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

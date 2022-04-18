@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <title>Sushi JS - Panier</title>
+</head>
+<body>
+    
+    <header>
+        <div class="banner"></div>
+    </header>
+
+    <nav>
+        <ul class="container"></ul>
+    </nav>
+
+    <main class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nom du produit</th>
+                    <th>Quantité</th>
+                    <th></th>
+                    <th>Sous total</th>
+                </tr>
+            </thead>
+            <tbody id="lines-container"></tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Total : <span id="total"></span></th>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>&copy; Jordan Burdairon - 2022</footer>
+
+    <script src="assets/scripts/data.js"></script>
+    <script src="assets/scripts/core.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/cart.js"></script>
+</body>
+</html>
